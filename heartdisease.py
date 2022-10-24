@@ -160,12 +160,12 @@ with st.sidebar:
     
             # 3d_scatter plot among old peak, thalch and cp
             st.write("Add cp to the before plot and produce a 3-d scatter plot.")
-            fig = px.scatter_3d(hd_Df, x='thalach', y='oldpeak', z='cp', color='target', title="Image7 3d plot between thalch, oldpeak and cp.")
+            fig = px.scatter_3d(hd_Df, x='thalach', y='oldpeak', z='cp', color='target', title="Image7 3d plot between thalch, oldpeak and cp")
             st.plotly_chart(fig)
 
             # 3d_scatter plot among old peak, thalch and ca
             st.write("Add ca to the before plot and produce a 3-d scatter plot.")
-            fig = px.scatter_3d(hd_Df, x='thalach', y='oldpeak', z='ca', color='target', title="Image8 3d plot between thalch, oldpeak and cp.")
+            fig = px.scatter_3d(hd_Df, x='thalach', y='oldpeak', z='ca', color='target', title="Image8 3d plot between thalch, oldpeak and ca")
             st.plotly_chart(fig)
             st.write("In those 3d-plots, the distribution of target=1 alse have obviously great difference from distribution of target=0.")
 

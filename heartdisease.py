@@ -246,7 +246,7 @@ with st.sidebar:
             col2.metric("True Negative", tn_tr)
             col3.metric("False Positive", fp_tr)
             col4.metric("False Negative", fn_tr)
-            st.write(f"train error rate : {test_error_rate: .3f}")
+            st.write(f"test error rate : {test_error_rate: .3f}")
             st.write("This model has high accuracy.")
             st.subheader("user defined prediction")
             age = st.slider("your age", value=50, min_value=20, max_value=100)
